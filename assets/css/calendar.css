@@ -1,0 +1,102 @@
+:root {
+    --calendar-width: 420px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.calendar {
+    width: var(--calendar-width);
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.info .month {
+    margin-right: 8px;
+}
+
+.info p {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.date-wrap {
+    padding-left: 16px;
+}
+
+.date {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.day,
+.day-name {
+    font-size: 1rem;
+    width: calc(100% / 8);
+    padding: 6px 0;
+    display: grid;
+    place-items: center;
+    margin: 2px;
+}
+
+.day {
+    background-color: #dff2e7;
+    color: #76a65b;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.5s ease-in;
+}
+
+.btn {
+    color: #9ba0a1;
+    background-color: #e6e6e6;
+}
+
+.btn {
+    background-size: 200% auto;
+}
+
+.btn:hover {
+    background-position: right center;
+    text-decoration: none;
+    border: 1px solid #ccc;
+}
+
+.container_btn-calendar {
+    position: relative;
+}
+
+.btn-next, .btn-prev {
+    position: absolute;
+}
+
+.btn-next {
+    right: 16px;
+}
+
+.btn-prev {
+    left: 16px;
+}
+
+.day.active {
+    border: 2px solid #000;
+    border-radius: 3px;
+}
